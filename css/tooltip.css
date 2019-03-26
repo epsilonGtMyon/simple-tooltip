@@ -1,0 +1,28 @@
+.tooltip div.tooltip-content {
+  display: none;
+  position: absolute;
+
+  padding:10px 20px;
+  border-radius: 6px;
+  z-index:20;
+  
+  background-color:green;
+  color:white;
+}
+
+.tooltip div.tooltip-content.is-danger {
+  background-color:red;
+  color:white;
+}
+.tooltip div.tooltip-content.is-warning {
+  background-color:yellow;
+  color:black;
+}
+.tooltip div.tooltip-content.is-info {
+  background-color:blue;
+  color:white;
+}
+
+.tooltip:hover div.tooltip-content {
+  display: block;
+}

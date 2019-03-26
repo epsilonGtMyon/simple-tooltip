@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>tooltip</title>
+    <script type="text/javascript" src="js/tooltip.js"></script>
+    <link rel="stylesheet" href="css/tooltip.css" />
+  </head>
+  <body>
+    <div id="div01" style="position:relative">
+      ここにホバーしてみる１
+    </div>
+
+    <div id="div02" style="position:relative">
+      ここにホバーしてみる２
+    </div>
+    <div id="div03" style="position:relative">
+      ここにホバーしてみる３
+    </div>
+
+    <script>
+      Tooltip.danger(document.querySelector('#div01'), 'でんじゃーっす');
+      Tooltip.warning(document.querySelector('#div02'), '警告っす');
+      Tooltip.info(document.querySelector('#div03'), '情報っす');
+    </script>
+  </body>
+</html>
